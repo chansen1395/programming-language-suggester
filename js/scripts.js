@@ -234,7 +234,7 @@ $(document).ready(function () {
     }
     else if (python === 2 && cSharp == 2 && sql == 2){
       $("#pythonResult#cSharpResult#sqlResult").show();
-  } else {
+    } else {
     $("#noResult").show()
   }
 
