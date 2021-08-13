@@ -1,4 +1,4 @@
-# _{language-suggester}_
+# _{programming-language-suggester}_
 
 #### _A quiz to find out which programming language you should learn_
 
@@ -27,8 +27,6 @@ _{This webpage has been created to explore boolean logic and branching, as well 
   - _Use a program such as VSCode to view and run the program._
 
 - _Alternatively, see links below to open the [Active gh-pages link](https://chansen1395.github.io/programming-language-suggester/)_
-- _Recommend using the most up to date version of your browser._
-- _Links to GitHub repositories can be run in VSCode or a similar application._
 
 ## Known Bugs
 
@@ -41,5 +39,5 @@ _{Let me know if you run into any issues or have questions, ideas or concerns. I
 ## Contact Information
 
 - _{<chansen13@georgefox.edu>}_
-- _{[GitHub Repo - gh-pages branch](https://github.com/chansen1395/programming-language-suggester)}_
+- _{[GitHub Repo - main](https://github.com/chansen1395/programming-language-suggester)}_
 - _{[Active gh-pages link](https://chansen1395.github.io/programming-language-suggester/)}_
