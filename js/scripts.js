@@ -1,13 +1,15 @@
 $(document).ready(function () {
+  
+  // Declare variables for each score.
   var javaScript = 0;
   var python = 0;
   var cSharp = 0;
   var sql = 0;
 
+  // Receives quiz responses for 7 questions and hides the previous question.
   $("#formRadio1").submit(function (event) {
     event.preventDefault();
-    // add results hide for reset - note taken at 9:10 am
-    $("#formRadio2,#formRadio3,#formRadio4,#formRadio5,#formRadio6,#formRadio7").hide();
+
     const activity = $("input:radio[name=answer1]:checked").val();
     if (activity === "javaScript") {
       $("#formRadio1").hide();
@@ -144,10 +146,6 @@ $(document).ready(function () {
     }
   });
 
-
-
-
-
   $("#formRadio7").submit(function (event) {
     event.preventDefault();
     const music = $("input:radio[name=answer7]:checked").val();
@@ -165,8 +163,8 @@ $(document).ready(function () {
       $("#formRadio6").hide();
     } else {
     }
-    // Show result section after quiz is finished
 
+    // Show result section after quiz is finished
     $("#formRadio7").hide();
     $("#showResult,#btnReset").show();
 
