@@ -1,3 +1,4 @@
+// Custom scripts
 $(document).ready(function () {
   
   // Declare variables for each score.
@@ -13,19 +14,19 @@ $(document).ready(function () {
     const activity = $("input:radio[name=answer1]:checked").val();
     if (activity === "javaScript") {
       $("#formRadio1").hide();
-      $("#formRadio2").show();
+      $("#formRadio2").fadeIn();
       return javaScript++;
     } else if (activity === "python") {
       $("#formRadio1").hide();
-      $("#formRadio2").show();
+      $("#formRadio2").fadeIn();
       return python++;
     } else if (activity === "cSharp") {
       $("#formRadio1").hide();
-      $("#formRadio2").show();
+      $("#formRadio2").fadeIn();
       return cSharp++;
     } else if (activity === "sql") {
       $("#formRadio1").hide();
-      $("#formRadio2").show();
+      $("#formRadio2").fadeIn();
       return sql++;
     } else {
     }
@@ -36,19 +37,19 @@ $(document).ready(function () {
     const fear = $("input:radio[name=answer2]:checked").val();
     if (fear === "javaScript") {
       $("#formRadio2").hide();
-      $("#formRadio3").show();
+      $("#formRadio3").fadeIn();
       return javaScript++;
     } else if (fear === "python") {
       $("#formRadio2").hide();
-      $("#formRadio3").show();
+      $("#formRadio3").fadeIn();
       return python++;
     } else if (fear === "cSharp") {
       $("#formRadio2").hide();
-      $("#formRadio3").show();
+      $("#formRadio3").fadeIn();
       return cSharp++;
     } else if (fear === "sql") {
       $("#formRadio2").hide();
-      $("#formRadio3").show();
+      $("#formRadio3").fadeIn();
       return sql++;
     } else {
     }
@@ -59,19 +60,19 @@ $(document).ready(function () {
     const relax = $("input:radio[name=answer3]:checked").val();
     if (relax === "javaScript") {
       $("#formRadio3").hide();
-      $("#formRadio4").show();
+      $("#formRadio4").fadeIn();
       return javaScript++;
     } else if (relax === "python") {
       $("#formRadio3").hide();
-      $("#formRadio4").show();
+      $("#formRadio4").fadeIn();
       return python++;
     } else if (relax === "cSharp") {
       $("#formRadio3").hide();
-      $("#formRadio4").show();
+      $("#formRadio4").fadeIn();
       return cSharp++;
     } else if (relax === "sql") {
       $("#formRadio3").hide();
-      $("#formRadio4").show();
+      $("#formRadio4").fadeIn();
       return sql++;
     } else {
     }
@@ -82,19 +83,19 @@ $(document).ready(function () {
     const lang = $("input:radio[name=answer4]:checked").val();
     if (lang === "javaScript") {
       $("#formRadio4").hide();
-      $("#formRadio5").show();
+      $("#formRadio5").fadeIn();
       return javaScript++;
     } else if (lang === "python") {
       $("#formRadio4").hide();
-      $("#formRadio5").show();
+      $("#formRadio5").fadeIn();
       return python++;
     } else if (lang === "cSharp") {
       $("#formRadio4").hide();
-      $("#formRadio5").show();
+      $("#formRadio5").fadeIn();
       return cSharp++;
     } else if (lang === "sql") {
       $("#formRadio4").hide();
-      $("#formRadio5").show();
+      $("#formRadio5").fadeIn();
       return sql++;
     } else {
     }
@@ -105,19 +106,19 @@ $(document).ready(function () {
     const dnd = $("input:radio[name=answer5]:checked").val();
     if (dnd === "javaScript") {
       $("#formRadio5").hide();
-      $("#formRadio6").show();
+      $("#formRadio6").fadeIn();
       return javaScript++;
     } else if (dnd === "python") {
       $("#formRadio5").hide();
-      $("#formRadio6").show();
+      $("#formRadio6").fadeIn();
       return python++;
     } else if (dnd === "cSharp") {
       $("#formRadio5").hide();
-      $("#formRadio6").show();
+      $("#formRadio6").fadeIn();
       return cSharp++;
     } else if (dnd === "sql") {
       $("#formRadio5").hide();
-      $("#formRadio6").show();
+      $("#formRadio6").fadeIn();
       return sql++;
     } else {
     }
@@ -128,19 +129,19 @@ $(document).ready(function () {
     const hangOut = $("input:radio[name=answer6]:checked").val();
     if (hangOut === "javaScript") {
       $("#formRadio6").hide();
-      $("#formRadio7").show();
+      $("#formRadio7").fadeIn();
       return javaScript++;
     } else if (hangOut === "python") {
       $("#formRadio6").hide();
-      $("#formRadio7").show();
+      $("#formRadio7").fadeIn();
       return python++;
     } else if (hangOut === "cSharp") {
       $("#formRadio6").hide();
-      $("#formRadio7").show();
+      $("#formRadio7").fadeIn();
       return cSharp++;
     } else if (hangOut === "sql") {
       $("#formRadio6").hide();
-      $("#formRadio7").show();
+      $("#formRadio7").fadeIn();
       return sql++;
     } else {
     }
@@ -166,56 +167,56 @@ $(document).ready(function () {
 
     // Show result section after quiz is finished
     $("#formRadio7").hide();
-    $("#showResult,#btnReset").show();
+    $("#showResult,#btnReset").fadeIn();
 
-    // Test for a definite high score to show
+    // Test for a definite high score to fadeIn
     if ((javaScript > python) && (javaScript > cSharp) && (javaScript > sql)) {
-      $("#javaScriptResult").show();
+      $("#javaScriptResult").fadeIn();
     }
     else if ((python > javaScript) && (python > cSharp) && (python > sql)) {
-      $("#pythonResult").show();
+      $("#pythonResult").fadeIn();
     }
     else if ((cSharp > javaScript) && (cSharp > python) && (cSharp > sql)) {
-      $("#cSharpResult").show();
+      $("#cSharpResult").fadeIn();
     }
     else if ((sql > javaScript) && (sql > python) && (sql > cSharp)) {
-      $("#sqlResult").show();
+      $("#sqlResult").fadeIn();
     }
 
     // Two-way tie
     else if (javaScript === 3 && python === 3) {
-      $("#javaScriptResult,#pythonResult").show();
+      $("#javaScriptResult,#pythonResult").fadeIn();
     }
     else if (javaScript === 3 && cSharp === 3) {
-      $("#javaScriptResult,#cSharpResult").show();
+      $("#javaScriptResult,#cSharpResult").fadeIn();
     }
     else if (javaScript === 3 && sql === 3) {
-      $("#javaScriptResult,#sqlResult").show();
+      $("#javaScriptResult,#sqlResult").fadeIn();
     }
     else if (python === 3 && cSharp === 3) {
-      $("#pythonResult,#cSharpResult").show();
+      $("#pythonResult,#cSharpResult").fadeIn();
     }
     else if (python === 3 && sql === 3) {
-      $("#pythonResult,#sqlResult").show();
+      $("#pythonResult,#sqlResult").fadeIn();
     }
     else if (cSharp === 3 && sql === 3) {
-      $("#cSharpResult,#sqlResult").show();
+      $("#cSharpResult,#sqlResult").fadeIn();
     }
 
     // Three-way tie & no result
     else if (javaScript === 2 && python === 2 && cSharp === 2) {
-      $("#javaScriptResult,#pythonResult,#cSharpResult").show();
+      $("#javaScriptResult,#pythonResult,#cSharpResult").fadeIn();
     }
     else if (javaScript === 2 && python === 2 && sql === 2) {
-      $("#javaScriptResult,#pythonResult,#sqlResult").show();
+      $("#javaScriptResult,#pythonResult,#sqlResult").fadeIn();
     }
     else if (javaScript === 2 && cSharp === 2 && sql === 2) {
-      $("#javaScriptResult,#cSharpResult,#sqlResult").show();
+      $("#javaScriptResult,#cSharpResult,#sqlResult").fadeIn();
     }
     else if (python === 2 && cSharp === 2 && sql === 2) {
-      $("#pythonResult,#cSharpResult,#sqlResult").show();
+      $("#pythonResult,#cSharpResult,#sqlResult").fadeIn();
     } else {
-    $("#noResult").show();
+    $("#noResult").fadeIn();
     }
 
     // adds a reset button at the end of the quiz.

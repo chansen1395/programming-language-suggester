@@ -10,13 +10,19 @@
 </head>
 
 <body>
+
+  <!-- Creates a header for the quiz -->
   <div class = "jumbotron jumbotron-fluid">
     <div class = "container">
       <h2 class = "display-4">Considering learning to program?</h2>
       <h4 class = "lead">Take this fun quiz to find out which language suits you best!</h4>
     </div>
   </div>
+
+  <!-- Container for the quiz -->
   <div class="container">
+
+    <!-- A form for each of the 7 questions, feeding input into scripts. -->
     <form class="card-smaller" id="formRadio1">
       <h2 class="card-header">Question 1: What is your favorite activity?</h2>
       <div class="radio">
@@ -244,10 +250,13 @@
       </div>
     </form>
 
+    <!-- Show the results of the quiz and include a button to reset the quiz. -->
+    <!-- Depending on answers to questions, more than one result may show. -->
     <div id="showResult">
       <h1>You should check out:</h1>
       <div class="row img">
 
+        <!-- Javascript Result -->
         <div id="javaScriptResult">
           <div class="card-smallerjs">
             <h1 class="card-header clickable" href="https://www.javascript.com/">JavaScript!</h1>
@@ -261,6 +270,8 @@
             </p>
           </div>
         </div>
+
+        <!-- Python Result -->
         <div id="pythonResult">
           <div class="card-smallerpy">
             <h1 class="card-header clickable" href="https://www.python.org/">Python!</h1>
@@ -276,6 +287,8 @@
             </p>
           </div>
         </div>
+
+        <!-- C# Result -->
         <div id="cSharpResult">
           <div class="card-smallercs">
             <h1 class="card-header clickable" href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">C#!
@@ -290,6 +303,8 @@
             </p>
           </div>
         </div>
+
+        <!-- SQL Result -->
         <div id="sqlResult">
           <div class="card-smallersql">
             <h1 class="card-header clickable" href="https://en.wikipedia.org/wiki/SQL">SQL!</h1>
@@ -302,13 +317,17 @@
           </div>
         </div>
 
+        <!-- This section is not used, but in the off chance
+        the site breaks and no adequate result is achieved
+        this will display a message saying such. -->
         <div id="noResult">
           <div class="card-smaller">
-            <h1 class="card-header">You can't make up your mind!</h1>
+            <h1 class="card-header">We can't decide! Try again!</h1>
             <img class="card-body img" src="img/noresult.jpg" />
           </div>
         </div>
 
+        <!-- Reset button reloads site. -->
         <p>
           <button class="btn btn-success-reset" id="btnReset">Reset</button>
         </p>
