@@ -167,10 +167,6 @@ $(document).ready(function () {
     }
     // Show result section after quiz is finished
 
-    alert(javaScript);
-    alert(python);
-    alert(cSharp);
-    alert(sql);
     $("#formRadio7").hide();
     $("#showResult,#btnReset").show();
 

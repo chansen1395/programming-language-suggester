@@ -1,14 +1,31 @@
+/* Custom Style Sheet */
+
+/* Hides branches at the beginning of the program */
 #formRadio2, #formRadio3, #formRadio4, #formRadio5, #formRadio6, #formRadio7,
 #showResult, #javaScriptResult, #pythonResult, #cSharpResult, #sqlResult,
 #btnReset, #noResult {
   display: none;
 }
 
+/* Formats image size */
 .img{
   text-align: center;
   width: 300px;
 }
 
+/* Clickable element behavior */
+.clickable {
+  color: #004a99;
+}
+
+.clickable:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  cursor: pointer;
+} 
+
+
+/* Custom card elements */
 .card-smaller {
   position: relative;
   display: -ms-flexbox;
@@ -22,6 +39,7 @@
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   width: 400px;
+  padding: 15px;
 }
 
 .card-smallerjs {
@@ -37,6 +55,8 @@
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   width: 400px;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .card-smallerpy {
   position: relative;
@@ -51,6 +71,8 @@
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   width: 400px;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .card-smallercs {
   position: relative;
@@ -65,6 +87,8 @@
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   width: 400px;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .card-smallersql {
   position: relative;
@@ -79,29 +103,8 @@
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   width: 400px;
-}
-
-
-
-.card-footer2 {
-  padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  width: 400px;
-}
-
-.btn-success2 {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-  width: 350px;
-}
-
-.btn-warning2 {
-  color: #212529;
-  background-color: #ffc107;
-  border-color: #ffc107;
-  width: 350px;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 
 .card-body2 {
@@ -110,4 +113,33 @@
   min-height: 1px;
   padding: 1.25rem;
   margin: 25px;
+}
+
+.card-footer2 {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  width: 350px;
+}
+
+/* Custom button elements */
+.btn-success2 {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  width: 350px;
+}
+
+.btn-success-reset {
+  color: #fff;
+  background-color: #3e79d1;
+  border-color: #000000;
+  width: 400px;
+}
+
+.btn-warning2 {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  width: 350px;
 }
