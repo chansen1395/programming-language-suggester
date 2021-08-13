@@ -1,13 +1,12 @@
 $(document).ready(function () {
-  var kermit = 0;
-  var mspiggy = 0;
-  var chef = 0;
+  var javaScript = 0;
+  var python = 0;
+  var basic = 0;
+  var sql = 0;
 
   $("#formRadio1").submit(function (event) {
     event.preventDefault();
-    $("#cow").hide();
-    $("#snake").hide();
-    $("#werewolf").hide();
+    $("#formRadio2,#formRadio3,#formRadio4,#formRadio5,#formRadio6,#formRadio7").hide();
     const celeb = $("input:radio[name=answer1]:checked").val();
     if (celeb === "kermit") {
       $("#formRadio1").hide();
