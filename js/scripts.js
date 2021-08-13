@@ -185,6 +185,7 @@ $(document).ready(function () {
     } else {
     }
     // Show result section after quiz is finished
+    $("#formRadio7").hide();
     $("#showResult,#btnReset").show();
 
     // Test for a definite high score to show
@@ -203,53 +204,39 @@ $(document).ready(function () {
 
     // Two-way tie
     else if (javaScript === 3 && python == 3) {
-      $("#javaScriptResult").show();
-      $("#pythonResult").show();
+      $("#javaScriptResult,#pythonResult").show();
     }
     else if (javaScript === 3 && cSharp == 3) {
-      $("#javaScriptResult").show();
-      $("#cSharpResult").show();
+      $("#javaScriptResult,#cSharpResult").show();
     }
     else if (javaScript === 3 && sql == 3) {
-      $("#javaScriptResult").show();
-      $("#sqlResult").show();
+      $("#javaScriptResult,#sqlResult").show();
     }
     else if (python === 3 && cSharp == 3) {
-      $("#javaScriptResult").show();
-      $("#sqlResult").show();
+      $("#javaScriptResult,#sqlResult").show();
     }
     else if (python === 3 && sql == 3) {
-      $("#javaScriptResult").show();
-      $("#sqlResult").show();
+      $("#javaScriptResult,#sqlResult").show();
     }
     else if (cSharp === 3 && sql == 3) {
-      $("#javaScriptResult").show();
-      $("#sqlResult").show();
+      $("#javaScriptResult,#sqlResult").show();
     }
 
-  //   // Three-way tie & no result
-  //   // else if (javaScript === 2 && python == 2 && cSharp == 3){
-  //   //   $("#javaScriptResult").show();
-  //   //   $("#pythonResult").show();
-  //   //   $("#cSharpResult").show();
-  //   // }
-  //   // else if (javaScript === 2 && python == 2 && sql == 3){
-  //   //   $("#javaScriptResult").show();
-  //   //   $("#pythonResult").show();
-  //   //   $("#sqlResult").show();
-  //   // }
-  //   // else if (javaScript === 2 && cSharp == 2 && sql == 3){
-  //   //   $("#javaScriptResult").show();
-  //   //   $("#cSharpResult").show();
-  //   //   $("#sqlResult").show();
-  //   // }
-  //   // else if (python === 2 && cSharp == 2 && sql == 3){
-  //   //   $("#pythonResult").show();
-  //   //   $("#cSharpResult").show();
-  //   //   $("#sqlResult").show();
-  // } else {
-  //   $("#noResult").show()
-  // }
+    // Three-way tie & no result
+    else if (javaScript === 2 && python == 2 && cSharp == 2){
+      $("#javaScriptResult,#pythonResult,#cSharpResult").show();
+    }
+    else if (javaScript === 2 && python == 2 && sql == 2){
+      $("#javaScriptResult,#pythonResult,#sqlResult").show();
+    }
+    else if (javaScript === 2 && cSharp == 2 && sql == 2){
+      $("#javaScriptResult,#cSharpResult#sqlResult").show();
+    }
+    else if (python === 2 && cSharp == 2 && sql == 2){
+      $("#pythonResult#cSharpResult#sqlResult").show();
+  } else {
+    $("#noResult").show()
+  }
 
 
 
