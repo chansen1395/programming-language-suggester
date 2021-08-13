@@ -154,43 +154,29 @@ $(document).ready(function () {
     if (music === "javaScript") {
       javaScript++;
       $("#formRadio6").hide();
-      // alert(javaScript);
-      // alert(python);
-      // alert(cSharp);
-      // alert(sql);
-
     } else if (music === "python") {
       python++;
       $("#formRadio6").hide();
-      // alert(javaScript);
-      // alert(python);
-      // alert(cSharp);
-      // alert(sql);
     } else if (music === "cSharp") {
       cSharp++;
       $("#formRadio6").hide();
-      // Test whether scores are being tabulated
-      // alert(javaScript);
-      // alert(python);
-      // alert(cSharp);   
-      // alert(sql);   
     } else if (music === "sql") {
       sql++;
       $("#formRadio6").hide();
-      // Test whether scores are being tabulated
-      // alert(javaScript);
-      // alert(python);
-      // alert(cSharp);   
-      // alert(sql);   
     } else {
     }
     // Show result section after quiz is finished
+
+    alert(javaScript);
+    alert(python);
+    alert(cSharp);
+    alert(sql);
     $("#formRadio7").hide();
     $("#showResult,#btnReset").show();
 
     // Test for a definite high score to show
     if ((javaScript > python) && (javaScript > cSharp) && (javaScript > sql)) {
-      $("#javaScriptResult").show();    
+      $("#javaScriptResult").show();
     }
     else if ((python > javaScript) && (python > cSharp) && (python > sql)) {
       $("#pythonResult").show();
@@ -203,65 +189,40 @@ $(document).ready(function () {
     }
 
     // Two-way tie
-    else if (javaScript === 3 && python == 3) {
+    else if (javaScript === 3 && python === 3) {
       $("#javaScriptResult,#pythonResult").show();
     }
-    else if (javaScript === 3 && cSharp == 3) {
+    else if (javaScript === 3 && cSharp === 3) {
       $("#javaScriptResult,#cSharpResult").show();
     }
-    else if (javaScript === 3 && sql == 3) {
+    else if (javaScript === 3 && sql === 3) {
       $("#javaScriptResult,#sqlResult").show();
     }
-    else if (python === 3 && cSharp == 3) {
-      $("#javaScriptResult,#sqlResult").show();
+    else if (python === 3 && cSharp === 3) {
+      $("#pythonResult,#cSharpResult").show();
     }
-    else if (python === 3 && sql == 3) {
-      $("#javaScriptResult,#sqlResult").show();
+    else if (python === 3 && sql === 3) {
+      $("#pythonResult,#sqlResult").show();
     }
-    else if (cSharp === 3 && sql == 3) {
-      $("#javaScriptResult,#sqlResult").show();
+    else if (cSharp === 3 && sql === 3) {
+      $("#cSharpResult,#sqlResult").show();
     }
 
     // Three-way tie & no result
-    else if (javaScript === 2 && python == 2 && cSharp == 2){
+    else if (javaScript === 2 && python === 2 && cSharp === 2) {
       $("#javaScriptResult,#pythonResult,#cSharpResult").show();
     }
-    else if (javaScript === 2 && python == 2 && sql == 2){
+    else if (javaScript === 2 && python === 2 && sql === 2) {
       $("#javaScriptResult,#pythonResult,#sqlResult").show();
     }
-    else if (javaScript === 2 && cSharp == 2 && sql == 2){
-      $("#javaScriptResult,#cSharpResult#sqlResult").show();
+    else if (javaScript === 2 && cSharp === 2 && sql === 2) {
+      $("#javaScriptResult,#cSharpResult,#sqlResult").show();
     }
-    else if (python === 2 && cSharp == 2 && sql == 2){
-      $("#pythonResult#cSharpResult#sqlResult").show();
+    else if (python === 2 && cSharp === 2 && sql === 2) {
+      $("#pythonResult,#cSharpResult,#sqlResult").show();
     } else {
-    $("#noResult").show()
-  }
-
-
-
-
-    // // Calculate and show Results
-    // $("#showResult,#btnReset").show();
-    // if (javaScript >= 4) {
-    //   // alert("testfrog");
-    //   $("#javaScriptResult").show();
-    // } else if (python >= 4) {
-    //   // alert("testpig");
-    //   $("#pythonResult").show();
-    // } else if (cSharp >= 4) {
-    //   // alert("testcSharp");
-    //   $("#cSharpResult").show();
-    // } else if (sql >= 4) {
-    //   // alert("testcSharp");
-    //   $("#cSharpResult").show();
-    // } else {
-    //   if (javaScript === python) && python ===
-    //   // if (javaScript ===)
-    //   // $("#showResult").hide();
-    //   $("#noResult").show()
-    //   // alert("testno");
-    // }
+    $("#noResult").show();
+    }
 
     // adds a reset button at the end of the quiz.
     $("#btnReset").click(function () {
