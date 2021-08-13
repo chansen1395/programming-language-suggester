@@ -189,15 +189,16 @@ $(document).ready(function () {
 
     // Test for a definite high score to show
     if ((javaScript > python) && (javaScript > cSharp) && (javaScript > sql)) {
-          $("#javaScriptResult").show();      
+          $("#javaScriptResult").show();
+          alert(javaScript);
+          alert(python);
+          alert(cSharp);   
+          alert(sql);    
     }
 
-    else if (python > javaScript) {
-      if (python > cSharp) {
-        if (python > sql) {
+
+    else if ((python > javaScript) && (python > cSharp) && (python > sql)) {
           $("#pythonResult").show();
-        }
-      }
     }
 
     else if (cSharp > javaScript) {

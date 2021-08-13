@@ -1,5 +1,6 @@
-#formRadio2, #formRadio3, #formRadio4, #formRadio5, #formRadio6, #formRadio7, #quizResult, #kermitResult, 
-#btnReset, #chefResult, #noResult, #showResult, #newQuiz {
+#formRadio2, #formRadio3, #formRadio4, #formRadio5, #formRadio6, #formRadio7,
+#showResult, #javaScriptResult, #pythonResult, #cSharpResult, #sqlResult,
+#btnReset, #noResult {
   display: none;
 }
 
