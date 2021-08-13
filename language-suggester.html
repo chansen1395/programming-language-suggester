@@ -1,261 +1,285 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Language Quiz</title>
+  </head>
 
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Language Quiz</title>
-</head>
+  <body>
+    <h2>Considering learning to program?</h2>
+    <h4>Take this quiz to find out which language suits you best!</h4>
 
-<body>
-  <h2>Considering learning to program?</h2>
-  <h4>Take this quiz to find out which language suits you best!</h4>
+    <div class="container">
+      <form class="card-smaller" id="formRadio1">
+        <h2 class="card-header">Question 1: What is your favorite activity?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="javaScript" required />
+            I like talking to the user and to the database.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="python" />
+            I'm a jack-of-all trades. I like to do almost everything!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="cSharp" />
+            I can do it all, but I like to develop programs.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="sql" />
+            I like to hold the key to valuable secrets.
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-success2">Submit</button>
+        </div>
+      </form>
 
-  <div class="container">
-    <form class = "card-smaller" id="formRadio1">
-      <h2 class = "card-header">Question 1: What is your favorite activity?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer1" value="javaScript" required />
-          I like talking to the user and to the database.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer1" value="python" />
-          I'm a jack-of-all trades. I like to do almost everything!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer1" value="cSharp" />
-          I can do it all, but I like to develop programs.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer1" value="sql" />
-          I like to hold the key to valuable secrets.
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-success2">Submit</button>
-      </div>
-    </form>
+      <form class="card-smaller" id="formRadio2">
+        <h2 class="card-header">Question 2: What is your greatest fear?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="javaScript" required />
+            Bad input from the user.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="python" />
+            Cross-site scripting scares me.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="cSharp" />
+            I'm afraid of SQL injection.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="sql" />
+            Everything fears me.
+            <br />
+            DROP TABLE important_things;
+            <br />
+            Did I scare you?
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-success2">Submit</button>
+        </div>
+      </form>
 
-   
-    <form class = "card-smaller" id="formRadio2">
-      <h2 class = "card-header">Question 2: What is your greatest fear?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer2" value="javaScript" required />
-          Bad input from the user.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer2" value="python" />
-          Cross-site scripting scares me.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer2" value="cSharp" />
-          I'm afraid of SQL injection.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer2" value="sql" />
-          Everything fears me.
-          <br>
-          DROP TABLE important_things;
-          <br>
-          Did I scare you?
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-success2">Submit</button>
-      </div>
-    </form>
+      <form class="card-smaller" id="formRadio3">
+        <h2 class="card-header">
+          Question 3: What's your idea of a relaxing time?
+        </h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="javaScript" required />
+            Coffee and a good book.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="python" />
+            Going to the zoo to see the snakes!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="cSharp" />
+            Going to the symphony.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="sql" />
+            Handling top-secret information.
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-success2">Submit</button>
+        </div>
+      </form>
 
-   
-    <form class = "card-smaller" id="formRadio3">
-      <h2 class = "card-header">Question 3: What's your idea of a relaxing time?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer3" value="javaScript" required />
-          Coffee and a good book.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer3" value="python" />
-          Going to the zoo to see the snakes!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer3" value="cSharp" />
-          Going to the symphony.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer3" value="sql" />
-          Handling top-secret information.
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-success2">Submit</button>
-      </div>
-    </form>
+      <form class="card-smaller" id="formRadio4">
+        <h2 class="card-header">Question 4: What is your favorite language?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer4" value="javaScript" required />
+            French
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer4" value="python" />
+            Italian
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer4" value="cSharp" />
+            Latin
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer4" value="sql" />
+            Vulcan/German
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-success2">Submit</button>
+        </div>
+      </form>
 
-   
-    <form class = "card-smaller" id="formRadio4">
-      <h2 class = "card-header">Question 4: What is your favorite language?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer4" value="javaScript" required />
-          French
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer4" value="python" />
-          Italian
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer4" value="cSharp" />
-          Latin
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer4" value="sql" />
-          Vulcan/German
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-success2">Submit</button>
-      </div>
-    </form>
+      <form class="card-smaller" id="formRadio5">
+        <h2 class="card-header">Question 5: What class do you play in D&D?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer5" value="javaScript" required />
+            Anything Lawful!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer5" value="python" />
+            I play a fighter.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer5" value="cSharp" />
+            I play a wizard.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer5" value="sql" />
+            Barbarian, all the way.
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-success2">Submit</button>
+        </div>
+      </form>
 
-   
-    <form class = "card-smaller" id="formRadio5">
-      <h2 class = "card-header">Question 5: What class do you play in D&D?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer5" value="javaScript" required />
-          Anything Lawful!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer5" value="python" />
-          I play a fighter.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer5" value="cSharp" />
-          I play a wizard.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer5" value="sql" />
-          Barbarian, all the way.
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-success2">Submit</button>
-      </div>
-    </form>
+      <form class="card-smaller" id="formRadio6">
+        <h2 class="card-header">
+          Question 6: Where do you you like to hang out?
+        </h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer6" value="javaScript" required />
+            Surfing the web!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer6" value="python" />
+            A pub.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer6" value="cSharp" />
+            The Library.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer6" value="sql" />
+            Lurking in a dark basement full of servers.
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-success2">Submit</button>
+        </div>
+      </form>
 
-   
-    <form class = "card-smaller" id="formRadio6">
-      <h2 class = "card-header">Question 6: Where do you you like to hang out?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer6" value="javaScript" required />
-          Surfing the web!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer6" value="python" />
-          A pub.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer6" value="cSharp" />
-          The Library.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer6" value="sql" />
-          Lurking in a dark basement full of servers.
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-success2">Submit</button>
-      </div>
-    </form>
+      <form class="card-smaller" id="formRadio7">
+        <h2 class="card-header">
+          Final Question: What kind of music do you listen to?
+        </h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer7" value="javaScript" required />
+            Top 40.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer7" value="python" />
+            Classic Rock!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer7" value="cSharp" />
+            Classical.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer7" value="sql" />
+            Anything with very loud drums and gongs.
+          </label>
+        </div>
+        <div class="card-footer2">
+          <button type="submit" class="btn btn-warning2">Submit</button>
+        </div>
+      </form>
 
-   
-    <form class = "card-smaller" id="formRadio7">
-      <h2 class = "card-header">Final Question: What kind of music do you listen to?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer7" value="javaScript" required />
-          Top 40.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer7" value="python" />
-          Classic Rock!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer7" value="cSharp" />
-          Classical.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="answer7" value="sql" />
-          Anything with very loud drums and gongs.
-        </label>
-      </div>
-      <div class ="card-footer2">
-        <button type="submit" class="btn btn-warning2">Submit</button>
-      </div>
-    </form>
+      <div id="showResult">
+        <h1>You should check out:</h1>
+        <div class="row">
+          
+          <div id="javaScriptResult">
+            <div class="card-smaller">
+              <h1 class="card-header">JavaScript!</h1>
+              <img class="img card-body" src="img/Kermit_the_Frog.jpg" />
+            </div>
+          </div>
+          <div id="pythonResult">
+            <div class="card-smaller">
+              <h1 class="card-header">Python!</h1>
+              <img class="img card-body" src="img/Kermit_the_Frog.jpg" />
+            </div>
+          </div>
+          <div id="cSharpResult">
+            <div class="card-smaller">
+              <h1 class="card-header">C#!</h1>
+              <img class="img card-body" src="img/Kermit_the_Frog.jpg" />
+            </div>
+          </div>
+          <div id="sqlResult">
+            <div class="card-smaller">
+              <h1 class="card-header">SQL!</h1>
+              <img class="img card-body" src="img/Kermit_the_Frog.jpg" />
+            </div>
+          </div>
 
-   
-
-      <!-- Intentionally outside of the showResult dialog -->
-      <!-- Hides the showResult div in the js to prevent awkward dialog -->
-    <div id="noResult">
-      <h1>You can't make up your mind!</h1>
-      <img class="img" src="img/noresult.jpg" />
+          <!-- Intentionally outside of the showResult dialog -->
+          <!-- Hides the showResult div in the js to prevent awkward dialog -->
+          <div id="noResult">
+            <h1>You can't make up your mind!</h1>
+            <img class="img" src="img/noresult.jpg" />
+          </div>
+        </div>
+        <p>
+          <button class="btn btn-success" id="btnReset">Reset</button>
+        </p>
+      </div>
     </div>
-    
-    <p>
-      <button class="btn btn-success" id="btnReset">Reset</button>
-    </p>
-
-  </div>
-
-</body>
-
+  </body>
 </html>

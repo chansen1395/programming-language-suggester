@@ -184,32 +184,117 @@ $(document).ready(function () {
       // alert(sql);   
     } else {
     }
-
-    // Calculate and show Results
+    // Show result section after quiz is finished
     $("#showResult,#btnReset").show();
-    if (javaScript >= 4) {
-      // alert("testfrog");
-      $("#javaScriptResult").show();
-    } else if (python >= 4) {
-      // alert("testpig");
-      $("#pythonResult").show();
-    } else if (cSharp >= 4) {
-      // alert("testcSharp");
-      $("#cSharpResult").show();
-    } else if (sql >= 4) {
-      // alert("testcSharp");
-      $("#cSharpResult").show();
-    } else {
-      // if (javaScript ===)
-      // $("#showResult").hide();
-      $("#noResult").show()
-      // alert("testno");
+
+    // Test for a definite high score to show
+    if ((javaScript > python) && (javaScript > cSharp) && (javaScript > sql)) {
+          $("#javaScriptResult").show();      
     }
+
+    else if (python > javaScript) {
+      if (python > cSharp) {
+        if (python > sql) {
+          $("#pythonResult").show();
+        }
+      }
+    }
+
+    else if (cSharp > javaScript) {
+      if (cSharp > python) {
+        if (cSharp > sql) {
+          $("#cSharpResult").show();
+        }
+      }
+    }
+
+    else if (sql > javaScript) {
+      if (sql > python) {
+        if (sql > cSharp) {
+          $("#sqlResult").show();
+        }
+      }
+    }
+
+  //   // Two-way tie
+  //   else if (javaScript === 3 && python == 3) {
+  //     $("#javaScriptResult").show();
+  //     $("#pythonResult").show();
+  //   }
+  //   else if (javaScript === 3 && cSharp == 3) {
+  //     $("#javaScriptResult").show();
+  //     $("#cSharpResult").show();
+  //   }
+  //   else if (javaScript === 3 && sql == 3) {
+  //     $("#javaScriptResult").show();
+  //     $("#sqlResult").show();
+  //   }
+  //   else if (python === 3 && cSharp == 3) {
+  //     $("#javaScriptResult").show();
+  //     $("#sqlResult").show();
+  //   }
+  //   else if (python === 3 && sql == 3) {
+  //     $("#javaScriptResult").show();
+  //     $("#sqlResult").show();
+  //   }
+  //   else if (cSharp === 3 && sql == 3) {
+  //     $("#javaScriptResult").show();
+  //     $("#sqlResult").show();
+  //   }
+
+  //   // Three-way tie & no result
+  //   // else if (javaScript === 2 && python == 2 && cSharp == 3){
+  //   //   $("#javaScriptResult").show();
+  //   //   $("#pythonResult").show();
+  //   //   $("#cSharpResult").show();
+  //   // }
+  //   // else if (javaScript === 2 && python == 2 && sql == 3){
+  //   //   $("#javaScriptResult").show();
+  //   //   $("#pythonResult").show();
+  //   //   $("#sqlResult").show();
+  //   // }
+  //   // else if (javaScript === 2 && cSharp == 2 && sql == 3){
+  //   //   $("#javaScriptResult").show();
+  //   //   $("#cSharpResult").show();
+  //   //   $("#sqlResult").show();
+  //   // }
+  //   // else if (python === 2 && cSharp == 2 && sql == 3){
+  //   //   $("#pythonResult").show();
+  //   //   $("#cSharpResult").show();
+  //   //   $("#sqlResult").show();
+  // } else {
+  //   $("#noResult").show()
+  // }
+
+
+
+
+    // // Calculate and show Results
+    // $("#showResult,#btnReset").show();
+    // if (javaScript >= 4) {
+    //   // alert("testfrog");
+    //   $("#javaScriptResult").show();
+    // } else if (python >= 4) {
+    //   // alert("testpig");
+    //   $("#pythonResult").show();
+    // } else if (cSharp >= 4) {
+    //   // alert("testcSharp");
+    //   $("#cSharpResult").show();
+    // } else if (sql >= 4) {
+    //   // alert("testcSharp");
+    //   $("#cSharpResult").show();
+    // } else {
+    //   if (javaScript === python) && python ===
+    //   // if (javaScript ===)
+    //   // $("#showResult").hide();
+    //   $("#noResult").show()
+    //   // alert("testno");
+    // }
 
     // adds a reset button at the end of the quiz.
     $("#btnReset").click(function () {
-      location.reload();
-    });
+    location.reload();
+  });
 
 });
 
