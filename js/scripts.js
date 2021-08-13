@@ -189,59 +189,43 @@ $(document).ready(function () {
 
     // Test for a definite high score to show
     if ((javaScript > python) && (javaScript > cSharp) && (javaScript > sql)) {
-          $("#javaScriptResult").show();
-          alert(javaScript);
-          alert(python);
-          alert(cSharp);   
-          alert(sql);    
+      $("#javaScriptResult").show();    
     }
-
-
     else if ((python > javaScript) && (python > cSharp) && (python > sql)) {
-          $("#pythonResult").show();
+      $("#pythonResult").show();
+    }
+    else if ((cSharp > javaScript) && (cSharp > python) && (cSharp > sql)) {
+      $("#cSharpResult").show();
+    }
+    else if ((sql > javaScript) && (sql > python) && (sql > cSharp)) {
+      $("#sqlResult").show();
     }
 
-    else if (cSharp > javaScript) {
-      if (cSharp > python) {
-        if (cSharp > sql) {
-          $("#cSharpResult").show();
-        }
-      }
+    // Two-way tie
+    else if (javaScript === 3 && python == 3) {
+      $("#javaScriptResult").show();
+      $("#pythonResult").show();
     }
-
-    else if (sql > javaScript) {
-      if (sql > python) {
-        if (sql > cSharp) {
-          $("#sqlResult").show();
-        }
-      }
+    else if (javaScript === 3 && cSharp == 3) {
+      $("#javaScriptResult").show();
+      $("#cSharpResult").show();
     }
-
-  //   // Two-way tie
-  //   else if (javaScript === 3 && python == 3) {
-  //     $("#javaScriptResult").show();
-  //     $("#pythonResult").show();
-  //   }
-  //   else if (javaScript === 3 && cSharp == 3) {
-  //     $("#javaScriptResult").show();
-  //     $("#cSharpResult").show();
-  //   }
-  //   else if (javaScript === 3 && sql == 3) {
-  //     $("#javaScriptResult").show();
-  //     $("#sqlResult").show();
-  //   }
-  //   else if (python === 3 && cSharp == 3) {
-  //     $("#javaScriptResult").show();
-  //     $("#sqlResult").show();
-  //   }
-  //   else if (python === 3 && sql == 3) {
-  //     $("#javaScriptResult").show();
-  //     $("#sqlResult").show();
-  //   }
-  //   else if (cSharp === 3 && sql == 3) {
-  //     $("#javaScriptResult").show();
-  //     $("#sqlResult").show();
-  //   }
+    else if (javaScript === 3 && sql == 3) {
+      $("#javaScriptResult").show();
+      $("#sqlResult").show();
+    }
+    else if (python === 3 && cSharp == 3) {
+      $("#javaScriptResult").show();
+      $("#sqlResult").show();
+    }
+    else if (python === 3 && sql == 3) {
+      $("#javaScriptResult").show();
+      $("#sqlResult").show();
+    }
+    else if (cSharp === 3 && sql == 3) {
+      $("#javaScriptResult").show();
+      $("#sqlResult").show();
+    }
 
   //   // Three-way tie & no result
   //   // else if (javaScript === 2 && python == 2 && cSharp == 3){
